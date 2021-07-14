@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="envy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-12 11:17:37 AM"/>
+        <attribute name="created" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMjsxMDo1ODo0MSBBTTsyNzg3"/>
+        <attribute name="edited" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMjsxMToxNzozNyBBTTsxOzI4OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l" type="String" array="False" size=""/>
+            <declare name="bh" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="ba" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name &quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;Enter number of bats hit &quot;" newline="True"/>
+            <input variable="bh"/>
+            <output expression="&quot;Enter total number of bats. &quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="ba" expression="bh / b"/>
+            <output expression="&quot;HHey &quot; &amp; l &amp; &quot; Your batting average is &quot; &amp; ba" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

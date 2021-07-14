@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="envy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-13 11:59:01 AM"/>
+        <attribute name="created" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMzsxMTo0NTo1MiBBTTsyNzg3"/>
+        <attribute name="edited" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMzsxMTo1OTowMSBBTTsxOzI4OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="d" type="String" array="False" size=""/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <declare name="g" type="Real" array="False" size=""/>
+            <declare name="mpg" type="Real" array="False" size=""/>
+            <declare name="gc" type="Real" array="False" size=""/>
+            <output expression="&quot;user please enter destination &quot;" newline="True"/>
+            <input variable="d"/>
+            <output expression="&quot;please enter milese travled &quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;please enter gallons used &quot;" newline="True"/>
+            <input variable="g"/>
+            <assign variable="mpg" expression="m / g"/>
+            <output expression="&quot;Your miles per galllons is = &quot; &amp; mpg" newline="True"/>
+            <assign variable="gc" expression="2.50 * g"/>
+            <output expression="&quot;destination is = &quot; &amp; d" newline="True"/>
+            <output expression="&quot;your miles traveled is = &quot; &amp; m" newline="True"/>
+            <output expression="&quot;Your total cost for gas is = &quot; &amp; gc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

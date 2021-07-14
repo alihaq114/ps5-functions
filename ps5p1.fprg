@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="envy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-12 10:58:36 AM"/>
+        <attribute name="created" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMjsxMDo0ODo0MCBBTTsyNzg1"/>
+        <attribute name="edited" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMjsxMDo1ODozNiBBTTsxOzI4OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="q" type="Integer" array="False" size=""/>
+            <declare name="p" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="d" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter quantity&quot;" newline="True"/>
+            <input variable="q"/>
+            <output expression="&quot;enter Price&quot;" newline="True"/>
+            <input variable="p"/>
+            <assign variable="total" expression="q * p"/>
+            <if expression="total &gt;= 100000">
+                <then>
+                    <assign variable="d" expression="total * .1"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Your guantity is = &quot; &amp; q &amp; &#13;&#10;&quot; your number per item is = &quot; &amp; p &amp;&#13;&#10;&quot; your Total is = &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

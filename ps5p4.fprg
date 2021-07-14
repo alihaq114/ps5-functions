@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="envy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-13 05:33:13 PM"/>
+        <attribute name="created" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMzsxMjowMzoyNiBQTTsyNzk4"/>
+        <attribute name="edited" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMzswNTozMzoxMyBQTTszOzI5MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="last" type="String" array="False" size=""/>
+            <declare name="jc" type="String" array="False" size=""/>
+            <declare name="hw" type="Integer" array="False" size=""/>
+            <declare name="pr" type="Real" array="False" size=""/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <output expression="&quot;what is your last name &quot;" newline="True"/>
+            <input variable="last"/>
+            <output expression="&quot;what is your job code? (l) (j) or (a) &quot;" newline="True"/>
+            <input variable="jc"/>
+            <output expression="&quot;what is your hours worked? &quot;" newline="True"/>
+            <input variable="hw"/>
+            <if expression="jc == &quot;a&quot;">
+                <then>
+                    <assign variable="pr" expression="30"/>
+                </then>
+                <else>
+                    <if expression="jc = &quot;l&quot;">
+                        <then>
+                            <assign variable="pr" expression="25"/>
+                        </then>
+                        <else>
+                            <if expression="jc = &quot;j&quot;">
+                                <then>
+                                    <assign variable="pr" expression="50"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;thank you for using this program im sorry but we are unable to do anything for you because of your job coding being invaild please try again if you think the job code you typed was wrong. &quot;" newline="True"/>
+                                    <assign variable="pr" expression="0"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="gross" expression="pr * hw"/>
+            <output expression="&quot;Thank you for using this program &quot; &amp; last &amp; &quot; your total gross pay is &quot; &amp; gross" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
